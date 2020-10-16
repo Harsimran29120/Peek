@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+</head>
+<script src="https://content.jwplatform.com/libraries/QpLbHLbV.js"></script>
+<body>
+
+
+<div class="contain">
+<div class="video-detail-page">
+<div class="contant-top ">
+
+<div class="wrapper">
+<div class="row">
+<div class="col-xs-12">
+<div class="bread-crumb">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+
+
+
+<div id="vdo_ai_div"></div>
+<div class="margin-b-20 margin-t-20 aligncenter"></div>
+<div class="inner-contant-block">
+<div class="inner-contant">
+<div class="player-img new-player-src margin-b-10 to-lock">
+<div id="player"><div id="child"><h2>Please wait, Video Player is Loading...</h2></div></div>
+<script>
+               const player = jwplayer('player').setup({
+                                        "playlist": [{
+                                            "kind": "Single Item",
+                                            "mediaid": "96-11382",
+                                            "description": "",
+                                            "tags": "",
+                                            "title": "",
+                                            "sources": [{
+                                              "file": "https://stream2.wserials.com/live/live/index.m3u8"
+                                            }],
+                                        }],
+                                        "title": "",
+                                          width: "100%",
+                                          aspectratio: "16:9",
+                                          primary: "html5",
+                                        "hlshtml": true,
+                                        sharing: {
+                                            
+                                            
+                                        },
+                                        "playbackRateControls": true,
+                                        "cast": {},
+                                        "logo": {
+                                            "file": "",
+                                            "hide": false,
+                                            "margin": "10",
+                                            "position": "bottom-left"
+                                        },
+                                        autostart: true,
+                                        stagevideo: false,
+                                        stretching: "uniform"
+                                         
+
+
+                                        });
+                  player.on('error', function() {
+                      player.load({file:"https://stream2.wserials.com/live/live/index.m3u8"});
+                      player.play();
+                });
+              
+                                                
+                                      </script>
+<script>
+  function loadVideo(myFile) { 
+    jwplayer().load([{
+      file: myFile
+    }]);
+    jwplayer().play();
+  };
+</script>
+</div>
+
